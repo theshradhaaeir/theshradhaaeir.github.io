@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Shradha Samant: operations leader with 11+ years in service delivery, process improvement and AI-enabled productivity. Hyderabad, India.">
+<meta property="og:title" content="Shradha Samant">
+<meta property="og:description" content="Shradha Samant: operations leader with 11+ years in service delivery, process improvement and AI-enabled productivity. Hyderabad, India.">
+<meta property="og:type" content="website">
+<style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Shradha Samant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<style>
+/* Layout: warm editorial portfolio. Text left, tilting arched portrait right with a 3D wireframe orb; ticker band, counters and scroll-driven reveals add motion. */
+:root {
+  --bg: #F6EEE7;
+  --paper: #FCF8F4;
+  --blush: #EBD9CC;
+  --ink: #2F231E;
+  --muted: #6F5E55;
+  --line: #E1D3C7;
+  --accent: #8A5441;
+  --accent-soft: #F0E0D5;
+  --gold: #B68A45;
+  --on-ink: #FCF8F4;
+  --cocoa: #3B2821;
+  --cocoa-fg: #F6EEE7;
+  --cocoa-muted: #D5C3B5;
+  --cocoa-line: #5C4237;
+  --cocoa-gold: #E2BC7F;
+  --font-display: "Cormorant", "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-body: "Jost", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1E1613; --paper: #271D19; --blush: #3A2B25; --ink: #F5E9DF; --muted: #BDA99C; --line: #3B2D27;
+    --accent: #E2B79F; --accent-soft: #33251F; --gold: #D9AE6B; --on-ink: #1E1613; --cocoa: #2D201B; --cocoa-line: #4A372E; --cocoa-gold: #D9AE6B; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1E1613; --paper: #271D19; --blush: #3A2B25; --ink: #F5E9DF; --muted: #BDA99C; --line: #3B2D27;
+  --accent: #E2B79F; --accent-soft: #33251F; --gold: #D9AE6B; --on-ink: #1E1613; --cocoa: #2D201B; --cocoa-line: #4A372E; --cocoa-gold: #D9AE6B; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  padding-inline: 1.25rem;
+  padding-block: 0;
+  overflow-x: clip;
+}
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.wrap { max-width: 70rem; margin-inline: auto; }
+
+.label { font-family: var(--font-body); font-weight: 500; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.16em; }
+
+.progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: var(--gold); transform: scaleX(0); transform-origin: 0 50%; z-index: 20; pointer-events: none; }
+
+/* top bar */
+.bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem 1.5rem; padding-block: 1.4rem; }
+.bar .mark { font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; letter-spacing: 0.01em; }
+.bar nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; }
+.bar nav a { color: var(--muted); text-decoration: none; padding-block: 0.25rem; }
+.bar nav a:hover { color: var(--accent); }
+
+/* hero */
+.hero { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 2.5rem 4rem; align-items: center; padding-block: 2.5rem 4rem; }
+.eyebrow { color: var(--accent); margin: 0 0 1.1rem; display: flex; align-items: center; gap: 0.8rem; }
+.eyebrow::before { content: ""; width: 2.2rem; height: 1px; background: var(--gold); }
+h1 { font-family: var(--font-display); font-weight: 600; font-size: clamp(3.1rem, 9vw, 5.8rem); line-height: 0.95; letter-spacing: -0.015em; margin: 0 0 1.4rem; text-wrap: balance; }
+.role-line { font-family: var(--font-display); font-style: italic; font-weight: 500; font-size: clamp(1.35rem, 3vw, 1.75rem); color: var(--accent); margin: 0 0 1.25rem; line-height: 1.25; }
+.lede { font-size: 1.15rem; color: var(--muted); max-width: 33rem; margin: 0 0 2rem; }
+.lede strong { color: var(--ink); font-weight: 500; }
+.cta { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.btn { font-family: var(--font-body); font-weight: 500; font-size: 0.95rem; letter-spacing: 0.03em; border: 1px solid var(--ink); background: var(--ink); color: var(--on-ink); padding: 0.8rem 1.5rem; border-radius: 999px; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; min-width: 0; overflow-wrap: anywhere; }
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn:hover { border-color: var(--accent); background: var(--accent); color: var(--paper); }
+
+.portrait { position: relative; margin: 0; justify-self: center; width: 100%; max-width: 27rem; transition: transform 0.25s ease-out; }
+.portrait::before { content: ""; position: absolute; inset: 1.1rem -1.1rem -1.1rem 1.1rem; border-radius: 999px 999px 1.25rem 1.25rem; background: var(--blush); }
+.portrait img { position: relative; display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 46% 10%; border-radius: 999px 999px 1.25rem 1.25rem; background: var(--blush); max-width: 100%; }
+.portrait .tag { position: absolute; left: -0.75rem; bottom: 2.25rem; background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 0.55rem 1.1rem; font-size: 0.82rem; letter-spacing: 0.04em; box-shadow: 0 6px 20px rgb(60 35 25 / 0.14); }
+.portrait .tag b { font-weight: 600; color: var(--accent); }
+.orb { position: absolute; top: -2.25rem; right: -2.75rem; width: 10.5rem; height: 10.5rem; pointer-events: none; }
+.orb canvas { display: block; width: 100% !important; height: 100% !important; }
+
+/* ticker */
+.ticker { overflow: hidden; margin-block: 3.25rem 0; padding-block: 1.1rem; border-block: 1px solid var(--line); }
+.ticker-track { display: flex; width: max-content; }
+.ticker-group { display: flex; align-items: center; gap: 2.5rem; padding-right: 2.5rem; }
+.ticker-group span { font-family: var(--font-display); font-style: italic; font-weight: 500; font-size: 1.7rem; white-space: nowrap; display: inline-flex; align-items: center; gap: 2.5rem; }
+.ticker-group span::after { content: ""; width: 0.42rem; height: 0.42rem; transform: rotate(45deg); background: var(--gold); }
+
+/* facts strip */
+.facts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); background: var(--paper); border: 1px solid var(--line); border-radius: 1.25rem; margin-top: 2.5rem; }
+.fact { padding: 1.6rem 1.5rem; }
+.fact + .fact { border-left: 1px solid var(--line); }
+.fact b { display: block; font-family: var(--font-display); font-weight: 600; font-size: 3rem; line-height: 1; letter-spacing: -0.01em; color: var(--accent); font-variant-numeric: lining-nums tabular-nums; }
+.fact span { display: block; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-top: 0.5rem; }
+
+/* sections */
+section { padding-block: 4.5rem 0; }
+.head { display: grid; grid-template-columns: minmax(0, 12rem) minmax(0, 1fr); gap: 1rem 3rem; }
+h2 { font-family: var(--font-display); font-weight: 600; font-size: 2.2rem; line-height: 1.05; letter-spacing: -0.01em; margin: 0; }
+h2::after { content: ""; display: block; width: 2.2rem; height: 1px; background: var(--gold); margin-top: 0.8rem; }
+.body { min-width: 0; }
+.body > p:first-child { margin-top: 0; }
+p { margin: 0 0 1rem; max-width: 42rem; }
+h3 { font-family: var(--font-display); font-weight: 700; font-size: 1.5rem; line-height: 1.15; margin: 0 0 0.4rem; text-wrap: balance; }
+
+.programs-label { color: var(--muted); margin: 1.75rem 0 0.6rem; }
+.programs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+.programs li { font-size: 0.95rem; border: 1px solid var(--line); background: var(--paper); border-radius: 999px; padding: 0.3rem 1rem; }
+.programs li:hover { border-color: var(--gold); }
+
+.chart { background: var(--paper); border: 1px solid var(--line); border-radius: 1.25rem; padding: 1.1rem 1.1rem 0.9rem; margin: 2rem 0 0; max-width: 34rem; min-width: 0; }
+.chart svg { display: block; width: 100%; height: auto; }
+.chart .grid { stroke: var(--line); stroke-width: 1; }
+.chart .limit { stroke: var(--muted); stroke-width: 1; stroke-dasharray: 4 4; opacity: 0.7; }
+.chart .mean { stroke: var(--accent); stroke-width: 1.25; }
+.chart .run { fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-linejoin: round; }
+.chart .pt { fill: var(--paper); stroke: var(--ink); stroke-width: 1.5; }
+.chart .pt.last { fill: var(--gold); stroke: var(--gold); }
+.chart text { fill: var(--muted); font-family: var(--font-body); font-size: 10px; letter-spacing: 0.1em; }
+.chart figcaption { font-size: 0.8rem; color: var(--muted); margin-top: 0.5rem; }
+
+.pillars { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.pillar { background: var(--paper); border: 1px solid var(--line); border-radius: 1.25rem; padding: 1.6rem; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+.pillar:hover { border-color: var(--gold); box-shadow: 0 10px 30px rgb(60 35 25 / 0.1); }
+.pillar p { color: var(--muted); margin: 0; font-size: 1rem; }
+
+/* timeline */
+.timeline { list-style: none; margin: 0; padding: 0; position: relative; }
+.timeline::before { content: ""; position: absolute; left: 0.45rem; top: 0.9rem; bottom: 0.6rem; width: 1px; background: var(--line); }
+.role { position: relative; padding: 0 0 2.75rem 2.25rem; }
+.role:last-child { padding-bottom: 0; }
+.role::before { content: ""; position: absolute; left: 0; top: 0.5rem; width: 0.95rem; height: 0.95rem; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); }
+.role.now::before { background: var(--gold); border-color: var(--gold); }
+.when { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); margin: 0 0 0.35rem; }
+.role h3 { margin-bottom: 0.1rem; }
+.org { color: var(--accent); font-weight: 500; margin: 0 0 0.9rem; }
+.role ul { margin: 0; padding-left: 1.1rem; max-width: 44rem; }
+.role li { margin-bottom: 0.5rem; padding-left: 0.2rem; }
+.role li::marker { color: var(--gold); }
+
+/* results */
+.wins { list-style: none; margin: 0; padding: 0; }
+.wins li { display: grid; grid-template-columns: minmax(0, 11rem) minmax(0, 1fr); gap: 1.5rem; align-items: baseline; padding-block: 1.3rem; border-top: 1px solid var(--line); }
+.wins li:last-child { border-bottom: 1px solid var(--line); }
+.wins .fig { font-family: var(--font-display); font-weight: 700; font-size: 2rem; line-height: 1.05; color: var(--accent); font-variant-numeric: lining-nums; }
+.wins .txt { color: var(--muted); }
+
+/* skills */
+.skillset + .skillset { margin-top: 2rem; }
+.skillset h3 { font-size: 1.3rem; }
+.tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.7rem 0 0; padding: 0; list-style: none; }
+.tags li { font-size: 0.95rem; background: var(--accent-soft); color: var(--ink); padding: 0.3rem 0.9rem; border-radius: 999px; transition: background-color 0.2s ease, color 0.2s ease; }
+.tags li:hover { background: var(--accent); color: var(--paper); }
+.tags.outline li { background: transparent; border: 1px solid var(--gold); }
+.tags.outline li:hover { background: var(--gold); border-color: var(--gold); color: var(--paper); }
+
+.edu { list-style: none; margin: 0; padding: 0; }
+.edu li { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.15rem 1.5rem; padding-block: 1rem; border-top: 1px solid var(--line); }
+.edu li:last-child { border-bottom: 1px solid var(--line); }
+.edu small { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); }
+
+/* contact */
+.contact { margin-top: 5rem; padding: 3.5rem clamp(1.25rem, 5vw, 3.5rem); background: var(--blush); border-radius: 1.75rem; }
+.contact .label { color: var(--accent); margin: 0 0 1rem; }
+.contact .big { font-family: var(--font-display); font-weight: 600; font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.02; letter-spacing: -0.01em; margin: 0 0 1.75rem; max-width: 40rem; text-wrap: balance; }
+.addr { font-size: 1.05rem; overflow-wrap: anywhere; user-select: all; margin: 0 0 1.25rem; }
+.contact .btn.ghost { border-color: var(--ink); }
+.contact .btn.ghost:hover { color: var(--paper); }
+.foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem 1.5rem; padding-block: 1.75rem 2.25rem; font-size: 0.82rem; letter-spacing: 0.06em; color: var(--muted); }
+
+/* open-to-work badge */
+.open { display: inline-flex; align-items: center; gap: 0.7rem; background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 0.45rem 1.1rem; font-size: 0.92rem; margin: 0 0 1.5rem; max-width: 100%; }
+.open i { position: relative; width: 0.6rem; height: 0.6rem; border-radius: 50%; background: var(--gold); flex: none; }
+.open i::after { content: ""; position: absolute; inset: -0.3rem; border-radius: 50%; border: 1px solid var(--gold); opacity: 0; }
+
+/* case study */
+.case-intro { margin-bottom: 1.75rem; }
+.case { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; margin: 0; padding: 0; list-style: none; }
+.step { position: relative; background: var(--paper); border: 1px solid var(--line); border-radius: 1.25rem; padding: 1.5rem; }
+.case-title { margin-top: 3rem; }
+.pillar p.k { color: var(--accent); margin: 0 0 0.5rem; }
+.pillar h3 { font-size: 1.35rem; }
+.pillar.wide { grid-column: 1 / -1; }
+.pillar .tags { margin-top: 1rem; }
+.step + .step::before { content: "\2192"; position: absolute; left: -1.5rem; top: 50%; width: 1.5rem; text-align: center; transform: translateY(-50%); color: var(--gold); font-size: 1.3rem; line-height: 1; }
+.step .k { color: var(--accent); margin: 0 0 0.6rem; }
+.step p:last-child { margin: 0; color: var(--muted); font-size: 1rem; }
+
+/* metrics explorer */
+.tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0 0 1.25rem; }
+.tab { font: inherit; font-weight: 500; font-size: 0.95rem; border: 1px solid var(--line); background: var(--paper); color: var(--ink); padding: 0.5rem 1.15rem; border-radius: 999px; cursor: pointer; }
+.tab:hover { border-color: var(--gold); }
+.tab[aria-selected="true"] { background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
+.panel { background: var(--paper); border: 1px solid var(--line); border-radius: 1.25rem; padding: 1.75rem; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 1.5rem 2.5rem; }
+.panel > div { min-width: 0; }
+.panel .k { color: var(--accent); margin: 0 0 0.5rem; }
+.panel h3 { font-size: 2.4rem; margin: 0 0 0.5rem; }
+.panel p { margin: 0; color: var(--muted); }
+.panel p.k { color: var(--accent); }
+
+/* results on cocoa */
+#results { background: var(--cocoa); color: var(--cocoa-fg); border-radius: 1.75rem; padding: 3.5rem clamp(1.25rem, 4vw, 3rem); margin-top: 4.5rem; }
+#results h2::after { background: var(--cocoa-gold); }
+#results .wins li { border-color: var(--cocoa-line); }
+#results .wins .fig { color: var(--cocoa-gold); }
+#results .wins .txt { color: var(--cocoa-muted); }
+
+.resume-note { color: var(--muted); margin: 0 0 1rem; }
+
+@media (max-width: 52rem) {
+  .case { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .step + .step::before { content: "\2193"; left: 50%; top: -1.75rem; width: 1.5rem; margin-left: -0.75rem; transform: none; }
+  .panel { grid-template-columns: minmax(0, 1fr); padding: 1.4rem; }
+  .panel h3 { font-size: 2rem; }
+  #results { margin-top: 3.5rem; padding-block: 2.5rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes ping { from { transform: scale(0.6); opacity: 0.9; } to { transform: scale(1.7); opacity: 0; } }
+  .open i::after { animation: ping 2s ease-out infinite; }
+  @keyframes swap { from { opacity: 0; transform: translateY(8px); } }
+  .panel > div { animation: swap 0.35s ease; }
+}
+
+@media (max-width: 52rem) {
+  .hero { grid-template-columns: minmax(0, 1fr); padding-block: 1.5rem 3rem; gap: 2.5rem; }
+  .portrait { max-width: 22rem; margin-inline-end: 1.1rem; justify-self: start; }
+  .portrait .tag { left: 0.5rem; }
+  .orb { width: 7.5rem; height: 7.5rem; top: -1.75rem; right: -1.25rem; }
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fact:nth-child(3) { border-left: 0; }
+  .fact:nth-child(n+3) { border-top: 1px solid var(--line); }
+  .head { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .pillars { grid-template-columns: minmax(0, 1fr); }
+  .wins li { grid-template-columns: minmax(0, 1fr); gap: 0.25rem; }
+  section { padding-block-start: 3.5rem; }
+  .ticker-group span { font-size: 1.4rem; }
+}
+@media (max-width: 30rem) {
+  .bar nav { gap: 0.25rem 1rem; font-size: 0.92rem; }
+}
+
+/* motion */
+@media (prefers-reduced-motion: no-preference) {
+  .btn { transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease; }
+
+  @keyframes up { from { opacity: 0; transform: translateY(18px); } }
+  @keyframes fadein { from { opacity: 0; } }
+  .hero > div > * { animation: up 0.85s cubic-bezier(0.2, 0.7, 0.2, 1) backwards; }
+  .hero > div > :nth-child(2) { animation-delay: 0.08s; }
+  .hero > div > :nth-child(3) { animation-delay: 0.16s; }
+  .hero > div > :nth-child(4) { animation-delay: 0.24s; }
+  .hero > div > :nth-child(5) { animation-delay: 0.32s; }
+  .hero > div > :nth-child(6) { animation-delay: 0.4s; }
+  .portrait img { animation: fadein 1.1s ease 0.2s backwards; }
+
+  @keyframes bob { 50% { transform: translateY(-8px); } }
+  .orb { animation: bob 6s ease-in-out infinite; }
+
+  @keyframes ticker { to { transform: translateX(-50%); } }
+  .ticker-track { animation: ticker 42s linear infinite; }
+  .ticker:hover .ticker-track { animation-play-state: paused; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .ticker-track { width: auto; flex-wrap: wrap; }
+  .ticker-group[aria-hidden="true"] { display: none; }
+  .ticker-group { flex-wrap: wrap; gap: 0.5rem 2rem; }
+}
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    @keyframes grow { to { transform: scaleX(1); } }
+    .progress { animation: grow linear both; animation-timeline: scroll(root block); }
+  }
+}
+</style>
+
+
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<div class="wrap">
+  <header class="bar">
+    <span class="mark">Shradha Samant</span>
+    <nav aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#results">Results</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <p class="eyebrow label">Hyderabad, India</p>
+        <h1>Shradha Samant</h1>
+        <p class="role-line">Operations leader. Process improvement. AI-enabled productivity.</p>
+        <p class="lede">I lead service delivery teams and fix the processes behind them. <strong>11+ years</strong> across Accenture, Concentrix and HCL Technologies, with a practical habit of using AI to take repetitive work off a team's plate.</p>
+        <p class="open"><i aria-hidden="true"></i>Open to Operations Manager roles · Hyderabad or remote</p>
+        <div class="cta">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn ghost" href="https://www.linkedin.com/in/shradha-samant-75990481" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <figure class="portrait" id="tilt">
+        <img src="photo-crisp.jpg" width="1049" height="1310" alt="Portrait of Shradha Samant in a black blazer and burgundy top, smiling">
+        <div class="orb" id="orb" aria-hidden="true"></div>
+        <figcaption class="tag"><b>Team Leader</b> · Accenture</figcaption>
+      </figure>
+    </div>
+
+    <div class="ticker" aria-label="Areas of work">
+      <div class="ticker-track">
+        <div class="ticker-group">
+          <span>Voice support</span><span>Non-voice support</span><span>Chat support</span><span>Content moderation</span><span>Technical support</span><span>Artificial intelligence</span><span>Lean Six Sigma</span><span>Process improvement</span>
+        </div>
+        <div class="ticker-group" aria-hidden="true">
+          <span>Voice support</span><span>Non-voice support</span><span>Chat support</span><span>Content moderation</span><span>Technical support</span><span>Artificial intelligence</span><span>Lean Six Sigma</span><span>Process improvement</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="facts" role="list">
+      <div class="fact" role="listitem"><b data-n="11" data-s="+">11+</b><span>Years in operations</span></div>
+      <div class="fact" role="listitem"><b data-n="25" data-s="">25</b><span>Largest team led</span></div>
+      <div class="fact" role="listitem"><b data-n="90" data-s="%+">90%+</b><span>Quality accuracy</span></div>
+      <div class="fact" role="listitem"><b data-n="40" data-s="+">40+</b><span>Interviews conducted</span></div>
+    </div>
+
+    <section id="about">
+      <div class="head">
+        <h2>About</h2>
+        <div class="body">
+          <p>I am an operations and people leader who owns the numbers that matter in service delivery: Quality, SLA, AHT, Utilization, Occupancy and Throughput. I coach the team, read the trends, find the gap and fix the cause, not just the symptom.</p>
+          <p>I combine that with Lean Six Sigma and project management training, and with hands-on use of generative AI and automation for research, reporting, presentations, Excel and data work, and recurring operational tasks.</p>
+          <p class="programs-label label">Projects worked with</p>
+          <ul class="programs">
+            <li>AT&amp;T</li><li>Virgin Media</li><li>Macy's</li><li>Google</li><li>Meta</li>
+          </ul>
+          <figure class="chart" id="chart">
+            <svg viewBox="0 0 600 240" role="img" aria-label="Illustration of a control chart: points moving steadily inside upper and lower control limits around a mean line">
+              <line class="grid" x1="20" x2="580" y1="60" y2="60"></line>
+              <line class="grid" x1="20" x2="580" y1="180" y2="180"></line>
+              <line class="limit" x1="20" x2="580" y1="40" y2="40"></line>
+              <line class="limit" x1="20" x2="580" y1="200" y2="200"></line>
+              <line class="mean" x1="20" x2="580" y1="120" y2="120"></line>
+              <text x="22" y="34">UCL</text>
+              <text x="22" y="114">MEAN</text>
+              <text x="22" y="216">LCL</text>
+              <polyline id="run" class="run" points=""></polyline>
+              <g id="pts"></g>
+            </svg>
+            <figcaption>A control chart, illustrative only. Steady performance inside the limits is what I manage towards.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus">
+      <div class="head">
+        <h2>What I do</h2>
+        <div class="body pillars">
+          <div class="pillar">
+            <h3>Operations leadership</h3>
+            <p>Team management, performance governance, coaching and stakeholder management for day-to-day service delivery.</p>
+          </div>
+          <div class="pillar">
+            <h3>Process improvement</h3>
+            <p>Root-cause analysis, continuous improvement and workflow redesign using Lean Six Sigma practices.</p>
+          </div>
+          <div class="pillar">
+            <h3>AI-enabled productivity</h3>
+            <p>Using GenAI for research, content, presentations, Excel and data support, and everyday problem-solving.</p>
+          </div>
+          <div class="pillar">
+            <h3>People and performance</h3>
+            <p>Hiring, onboarding, mentoring, performance reviews, capability development and succession planning.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="head">
+        <h2>Experience</h2>
+        <div class="body">
+          <ol class="timeline">
+            <li class="role now">
+              <p class="when">Mar 2021 – Present</p>
+              <h3>Team Leader</h3>
+              <p class="org">Accenture Solutions Pvt. Ltd.</p>
+              <ul>
+                <li>Lead a team of 24 associates, driving service delivery and performance across Quality, SLA, AHT, Utilization, Occupancy and Throughput.</li>
+                <li>Use performance trends, operational reviews and structured problem-solving to find gaps, define corrective actions and improve execution.</li>
+                <li>Partner with stakeholders on operational priorities, hiring, coaching, performance reviews, capability development and succession planning.</li>
+                <li>Built an AI-enabled Metamate workflow for weekly training reminders, cutting repetitive manual follow-ups and improving consistency and compliance.</li>
+                <li>Spot repetitive operational activities and assess them for automation, AI-enabled productivity and workflow redesign.</li>
+                <li>Support operational reporting, documentation, knowledge sharing and process improvement.</li>
+                <li>Pull SLA reports every week for my team and for other leads.</li>
+                <li>Support onboarding of new joiners, working closely with HR through every step: orientation, laptop orders and setup, query support and MyTE approvals, plus coordinating manager connects.</li>
+                <li>Own the laptop returns process for the Hyderabad and Bangalore sites, with an AI-automated tracking sheet.</li>
+                <li>Plan, present and host town halls, coordinating with other teams so they run smoothly.</li>
+                <li>Diversity point of contact, supporting my managers.</li>
+              </ul>
+            </li>
+            <li class="role">
+              <p class="when">Jul 2016 – Mar 2021</p>
+              <h3>Senior Agent, Subject Matter Expert, Team Leader</h3>
+              <p class="org">Concentrix · Virgin Media and Macy's projects</p>
+              <ul>
+                <li>Progressed from Senior Agent to Subject Matter Expert to Team Leader.</li>
+                <li>Led teams of 20–25 associates, responsible for operational performance, coaching, quality and continuous improvement.</li>
+                <li>Conducted 40+ interviews and supported hiring, onboarding, ramp-up and capability development.</li>
+                <li>Supported new-team ramp-ups and operational excellence initiatives.</li>
+                <li>Led people engagement for almost 200 people, working closely with HR.</li>
+              </ul>
+            </li>
+            <li class="role">
+              <p class="when">Oct 2014 – Dec 2015</p>
+              <h3>Junior Engineer, Product Support Engineer</h3>
+              <p class="org">HCL Technologies</p>
+              <ul>
+                <li>Worked in ISP support, building a foundation in technology-enabled customer and product support.</li>
+                <li>Supported new joiners from about 8 to 9 months into the role.</li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="trusted">
+      <div class="head">
+        <h2>Trusted by managers</h2>
+        <div class="body">
+          <p>Alongside my core role, I take on the work that keeps a team running smoothly. Managers hand it to me because I follow through.</p>
+          <div class="pillars">
+            <div class="pillar wide">
+              <p class="label k">Accenture</p>
+              <h3>Onboarding new joiners</h3>
+              <p>I work closely with the HR team and stay in touch with new joiners through every step of onboarding. I also coordinate with managers so their first weeks go smoothly.</p>
+              <ul class="tags">
+                <li>Orientation</li><li>Laptop orders</li><li>Laptop setup</li><li>Query support</li><li>MyTE approvals</li><li>Manager connects</li>
+              </ul>
+            </div>
+            <div class="pillar">
+              <p class="label k">Accenture</p>
+              <h3>Town halls</h3>
+              <p>I handled the presentation, hosting and coordination with other teams so each town hall ran smoothly.</p>
+            </div>
+            <div class="pillar">
+              <p class="label k">Accenture</p>
+              <h3>Diversity point of contact</h3>
+              <p>I supported my managers as the diversity point of contact.</p>
+            </div>
+            <div class="pillar">
+              <p class="label k">Accenture</p>
+              <h3>Weekly SLA reports</h3>
+              <p>I pulled SLA reports every week, for my own team and for other leads.</p>
+            </div>
+            <div class="pillar">
+              <p class="label k">Accenture</p>
+              <h3>Laptop returns, two sites</h3>
+              <p>I ran the laptop returns process for Hyderabad and Bangalore, keeping a shared sheet current by working with each site's leads.</p>
+            </div>
+            <div class="pillar">
+              <p class="label k">Concentrix</p>
+              <h3>Engagement for almost 200 people</h3>
+              <p>I took care of people engagement, working closely with HR.</p>
+            </div>
+            <div class="pillar">
+              <p class="label k">HCL Technologies</p>
+              <h3>Supporting new joiners</h3>
+              <p>About 8 to 9 months into the role, I started supporting new people as they joined.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="casestudy">
+      <div class="head">
+        <h2>Case study</h2>
+        <div class="body">
+          <h3>Weekly training reminders, automated</h3>
+          <p class="case-intro">A small piece of AI-enabled workflow design from my current team, built to take a repeating chore off everyone's plate.</p>
+          <ol class="case">
+            <li class="step">
+              <p class="label k">Problem</p>
+              <p>Weekly training reminders relied on repeated manual follow-ups. They took time every week and were hard to keep consistent.</p>
+            </li>
+            <li class="step">
+              <p class="label k">What I built</p>
+              <p>An AI-enabled Metamate workflow that sends the weekly training reminders automatically.</p>
+            </li>
+            <li class="step">
+              <p class="label k">Result</p>
+              <p>Far fewer repetitive follow-ups, with more consistent reminders and better compliance.</p>
+            </li>
+          </ol>
+          <h3 class="case-title">Laptop returns across two sites, automated</h3>
+          <p class="case-intro">A second workflow, built after I took ownership of the laptop returns process for Hyderabad and Bangalore.</p>
+          <ol class="case">
+            <li class="step">
+              <p class="label k">Problem</p>
+              <p>Returns ran on a shared sheet that I kept current by chasing each site's leads one by one.</p>
+            </li>
+            <li class="step">
+              <p class="label k">What I built</p>
+              <p>A Metamate workflow that gathers every entry into one database, spots what is missing, and sends reminder emails and chat messages through AI.</p>
+            </li>
+            <li class="step">
+              <p class="label k">Result</p>
+              <p>One up-to-date record across both sites, with the chasing handled by the workflow.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="results">
+      <div class="head">
+        <h2>Results</h2>
+        <div class="body">
+          <ul class="wins">
+            <li><span class="fig">Up to 25</span><span class="txt">Led teams of up to 25 people, currently 24 at Accenture, while owning Quality, SLA, AHT, Billable Hours, Utilization, Occupancy and Throughput.</span></li>
+            <li><span class="fig">90%+</span><span class="txt">Consistent quality accuracy, achieved through coaching, performance management and structured reviews.</span></li>
+            <li><span class="fig">Automated</span><span class="txt">Weekly training reminders built in Metamate, removing repetitive follow-ups and improving compliance.</span></li>
+            <li><span class="fig">40+</span><span class="txt">Interviews conducted, plus onboarding, mentoring and capability development of new hires.</span></li>
+            <li><span class="fig">Many awards</span><span class="txt">Recognised repeatedly across my career. A few: Best Team Lead, Inspiration Leader Encore, Best Employee and Best Team.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="metrics">
+      <div class="head">
+        <h2>Metrics</h2>
+        <div class="body">
+          <p>The numbers I own as a team leader. Tap one to see what it measures and how I work with it.</p>
+          <div class="tabs" role="tablist" aria-label="Operational metrics" id="tabs">
+            <button class="tab" role="tab" id="tab-0" aria-selected="true" aria-controls="panel" tabindex="0" type="button">Quality</button>
+            <button class="tab" role="tab" id="tab-1" aria-selected="false" aria-controls="panel" tabindex="-1" type="button">SLA</button>
+            <button class="tab" role="tab" id="tab-2" aria-selected="false" aria-controls="panel" tabindex="-1" type="button">AHT</button>
+            <button class="tab" role="tab" id="tab-3" aria-selected="false" aria-controls="panel" tabindex="-1" type="button">Utilization</button>
+            <button class="tab" role="tab" id="tab-4" aria-selected="false" aria-controls="panel" tabindex="-1" type="button">Occupancy</button>
+            <button class="tab" role="tab" id="tab-5" aria-selected="false" aria-controls="panel" tabindex="-1" type="button">Throughput</button>
+          </div>
+          <div class="panel" id="panel" role="tabpanel" aria-labelledby="tab-0" aria-live="polite">
+            <div>
+              <p class="label k">What it measures</p>
+              <h3 id="m-name">Quality</h3>
+              <p id="m-what">How accurately the team's work meets the agreed standard.</p>
+            </div>
+            <div>
+              <p class="label k">How I work with it</p>
+              <p id="m-how">Coaching, structured reviews and performance management. This is how I have held quality accuracy at 90% and above.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="head">
+        <h2>Skills</h2>
+        <div class="body">
+          <div class="skillset">
+            <h3>Operations</h3>
+            <ul class="tags">
+              <li>Operations management</li><li>Service delivery</li><li>People leadership</li><li>Stakeholder management</li><li>KPI management</li><li>Hiring</li><li>Coaching</li><li>Lean Six Sigma</li><li>Project management</li>
+            </ul>
+          </div>
+          <div class="skillset">
+            <h3>Support channels</h3>
+            <ul class="tags">
+              <li>Technical support</li><li>Voice support</li><li>Non-voice support</li><li>Chat support</li><li>Content moderation</li>
+            </ul>
+          </div>
+          <div class="skillset">
+            <h3>Artificial intelligence</h3>
+            <ul class="tags">
+              <li>Artificial intelligence</li><li>Generative AI for business</li><li>Prompt engineering</li><li>AI-assisted research</li><li>AI-assisted presentations</li><li>AI with Excel and data</li><li>Website and chatbot prototyping</li><li>Workflow automation</li><li>Metamate</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="head">
+        <h2>Education</h2>
+        <div class="body">
+          <ul class="edu">
+            <li><span>B.Tech, Dehradun Institute of Technology</span></li>
+            <li><span>Lean Six Sigma Green Belt</span><small>Certification</small></li>
+            <li><span>Post Graduate Program in Project Management, Simplilearn</span></li>
+            <li><span>Be10x AI Course: generative AI, AI tools, prompt engineering</span><small>In progress</small></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <p class="label">Contact</p>
+      <p class="big">Hiring for operations or service delivery? Let's talk.</p>
+      <p class="resume-note">Resume available on request. Write to me at this address.</p>
+      <p class="addr" id="addr">theshradhaaeir@gmail.com</p>
+      <div class="cta">
+        <button class="btn" type="button" id="copy">Copy email address</button>
+        <a class="btn ghost" href="https://www.linkedin.com/in/shradha-samant-75990481" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+      </div>
+      <p id="status" role="status" style="margin:0.9rem 0 0;font-size:0.9rem;color:var(--muted)"></p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span>Shradha Samant</span>
+    <span>Operations leadership · Process improvement · AI-enabled productivity</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* Control chart (illustrative) with a draw-in when it scrolls into view. */
+  var ys = [118,104,126,110,98,122,108,94,116,102,90,112,98,86,104,92,84,100,88,80,96,84,78,86];
+  var n = ys.length, x0 = 20, x1 = 580, pts = [], g = document.getElementById("pts");
+  var ns = "http://www.w3.org/2000/svg";
+  for (var i = 0; i < n; i++) {
+    var x = x0 + (x1 - x0) * i / (n - 1);
+    pts.push(x.toFixed(1) + "," + ys[i]);
+    var c = document.createElementNS(ns, "circle");
+    c.setAttribute("cx", x.toFixed(1));
+    c.setAttribute("cy", ys[i]);
+    c.setAttribute("r", i === n - 1 ? 4.5 : 2.5);
+    c.setAttribute("class", i === n - 1 ? "pt last" : "pt");
+    g.appendChild(c);
+  }
+  var run = document.getElementById("run");
+  run.setAttribute("points", pts.join(" "));
+  if (!reduce && "IntersectionObserver" in window && run.getTotalLength) {
+    try {
+      var len = run.getTotalLength();
+      run.style.strokeDasharray = len;
+      run.style.strokeDashoffset = len;
+      g.style.opacity = 0;
+      var cio = new IntersectionObserver(function (es) {
+        if (!es[0].isIntersecting) return;
+        cio.disconnect();
+        run.style.transition = "stroke-dashoffset 2.2s ease";
+        run.style.strokeDashoffset = 0;
+        g.style.transition = "opacity 0.8s ease 1.6s";
+        g.style.opacity = 1;
+      }, { threshold: 0.35 });
+      cio.observe(document.getElementById("chart"));
+    } catch (e) { run.style.strokeDasharray = ""; g.style.opacity = 1; }
+  }
+
+  /* Count-up numbers. Final values are already in the HTML. */
+  var nums = document.querySelectorAll(".fact b");
+  function count(b) {
+    var to = +b.getAttribute("data-n"), suf = b.getAttribute("data-s") || "", t0 = null;
+    function step(t) {
+      if (t0 === null) t0 = t;
+      var p = Math.min((t - t0) / 1500, 1), e = 1 - Math.pow(1 - p, 3);
+      b.textContent = Math.round(to * e) + suf;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if (!reduce && "IntersectionObserver" in window) {
+    var nio = new IntersectionObserver(function (es) {
+      es.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        nio.unobserve(en.target);
+        count(en.target);
+      });
+    }, { threshold: 0.6 });
+    Array.prototype.forEach.call(nums, function (b) { nio.observe(b); });
+  }
+
+  /* Portrait tilt (pointer). */
+  var hero = document.querySelector(".hero"), pt = document.getElementById("tilt");
+  if (hero && pt && !reduce) {
+    hero.addEventListener("pointermove", function (e) {
+      if (e.pointerType !== "mouse") return;
+      var r = pt.getBoundingClientRect();
+      var px = Math.max(-1, Math.min(1, (e.clientX - (r.left + r.width / 2)) / r.width));
+      var py = Math.max(-1, Math.min(1, (e.clientY - (r.top + r.height / 2)) / r.height));
+      pt.style.transform = "perspective(1100px) rotateY(" + (px * 12).toFixed(2) + "deg) rotateX(" + (-py * 9).toFixed(2) + "deg)";
+    });
+    hero.addEventListener("pointerleave", function () { pt.style.transform = ""; });
+  }
+
+  /* 3D orb: a rotating wireframe icosahedron with a counter-rotating core (Three.js). */
+  var host = document.getElementById("orb");
+  if (host) {
+    if (!window.THREE) { host.hidden = true; }
+    else {
+      try {
+        var T = window.THREE;
+        var w = host.clientWidth || 160, h = host.clientHeight || 160;
+        var renderer = new T.WebGLRenderer({ alpha: true, antialias: true });
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.5));
+        renderer.setSize(w, h);
+        renderer.setClearColor(0x000000, 0);
+        host.appendChild(renderer.domElement);
+        var scene = new T.Scene();
+        var cam = new T.PerspectiveCamera(38, w / h, 0.1, 50);
+        cam.position.z = 6;
+        var group = new T.Group();
+        scene.add(group);
+        var geo = new T.IcosahedronGeometry(1.7, 1);
+        var m1 = new T.LineBasicMaterial({ transparent: true, opacity: 0.9 });
+        var m2 = new T.LineBasicMaterial({ transparent: true, opacity: 0.8 });
+        var dm = new T.MeshBasicMaterial();
+        var outer = new T.LineSegments(new T.WireframeGeometry(geo), m1);
+        var inner = new T.LineSegments(new T.WireframeGeometry(new T.OctahedronGeometry(0.85, 0)), m2);
+        group.add(outer);
+        group.add(inner);
+        var p = geo.attributes.position, seen = {}, sg = new T.SphereGeometry(0.085, 12, 12);
+        for (var j = 0; j < p.count; j++) {
+          var vx = p.getX(j), vy = p.getY(j), vz = p.getZ(j);
+          var key = vx.toFixed(3) + "," + vy.toFixed(3) + "," + vz.toFixed(3);
+          if (seen[key]) continue;
+          seen[key] = 1;
+          var dot = new T.Mesh(sg, dm);
+          dot.position.set(vx, vy, vz);
+          outer.add(dot);
+        }
+        var root = document.documentElement;
+        var paint = function () {
+          var cs = getComputedStyle(root);
+          m1.color.set(cs.getPropertyValue("--accent").trim() || "#8A5441");
+          m2.color.set(cs.getPropertyValue("--gold").trim() || "#B68A45");
+          dm.color.set(cs.getPropertyValue("--gold").trim() || "#B68A45");
+        };
+        paint();
+        try {
+          new MutationObserver(function () { paint(); if (reduce || !running) renderer.render(scene, cam); })
+            .observe(root, { attributes: true, attributeFilter: ["data-theme"] });
+          var mq = window.matchMedia("(prefers-color-scheme: dark)");
+          var onMq = function () { paint(); if (reduce || !running) renderer.render(scene, cam); };
+          if (mq.addEventListener) mq.addEventListener("change", onMq);
+        } catch (e2) {}
+
+        var tx = 0, ty = 0, running = false, visible = true;
+        // Keep scrolling smooth: pause drawing while the page is scrolling, cap at about 30 frames a second.
+        var scrolling = false, lastT = 0, stopT = null;
+        window.addEventListener("scroll", function () {
+          scrolling = true;
+          clearTimeout(stopT);
+          stopT = setTimeout(function () { scrolling = false; }, 160);
+        }, { passive: true });
+        document.addEventListener("visibilitychange", function () {
+          if (!document.hidden && visible && !running && !reduce) { running = true; requestAnimationFrame(frame); }
+        });
+        document.addEventListener("pointermove", function (e) {
+          tx = e.clientX / window.innerWidth - 0.5;
+          ty = e.clientY / window.innerHeight - 0.5;
+        }, { passive: true });
+
+        outer.rotation.set(0.5, 0.4, 0);
+        function frame(t) {
+          if (!visible || document.hidden) { running = false; return; }
+          if (scrolling || t - lastT < 33) { requestAnimationFrame(frame); return; }
+          lastT = t;
+          outer.rotation.y = t * 0.00024 + tx * 0.9;
+          outer.rotation.x = 0.5 + t * 0.00012 + ty * 0.7;
+          inner.rotation.y = -t * 0.00045;
+          inner.rotation.z = t * 0.0003;
+          renderer.render(scene, cam);
+          requestAnimationFrame(frame);
+        }
+        renderer.render(scene, cam);
+        if (!reduce) {
+          running = true;
+          requestAnimationFrame(frame);
+          if ("IntersectionObserver" in window) {
+            new IntersectionObserver(function (es) {
+              visible = es[0].isIntersecting;
+              if (visible && !running) { running = true; requestAnimationFrame(frame); }
+            }).observe(host);
+          }
+        }
+      } catch (err) { host.hidden = true; }
+    }
+  }
+
+  /* Metrics explorer. */
+  var metrics = [
+    { n: "Quality", w: "How accurately the team's work meets the agreed standard.", h: "Coaching, structured reviews and performance management. This is how I have held quality accuracy at 90% and above." },
+    { n: "SLA", w: "Whether the team delivers within the service levels agreed with the client.", h: "I read performance trends and operational reviews, find where delivery is slipping and agree corrective actions with the team." },
+    { n: "AHT", w: "Average handle time: how long a typical interaction takes from start to finish.", h: "I look for the process or skill gap behind long handle times, then coach or redesign the workflow without giving up quality." },
+    { n: "Utilization", w: "The share of paid time that goes to productive work.", h: "I balance work allocation across the team and look for repetitive tasks that can be automated to free up time." },
+    { n: "Occupancy", w: "The share of logged-in time spent actually handling work.", h: "I watch the balance between workload and staffing so the team is neither idle nor overloaded." },
+    { n: "Throughput", w: "The volume of work completed in a period.", h: "Structured problem-solving to remove blockers and redesign workflows, so more gets done without extra effort." }
+  ];
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
+  var panelEl = document.getElementById("panel");
+  function pick(i, focus) {
+    tabs.forEach(function (t, j) {
+      var on = j === i;
+      t.setAttribute("aria-selected", on ? "true" : "false");
+      t.setAttribute("tabindex", on ? "0" : "-1");
+    });
+    var m = metrics[i];
+    panelEl.setAttribute("aria-labelledby", "tab-" + i);
+    var kids = panelEl.children;
+    document.getElementById("m-name").textContent = m.n;
+    document.getElementById("m-what").textContent = m.w;
+    document.getElementById("m-how").textContent = m.h;
+    // restart the small swap animation
+    for (var k = 0; k < kids.length; k++) {
+      kids[k].style.animation = "none";
+      void kids[k].offsetWidth;
+      kids[k].style.animation = "";
+    }
+    if (focus) tabs[i].focus();
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener("click", function () { pick(i, false); });
+    t.addEventListener("keydown", function (e) {
+      var next = null;
+      if (e.key === "ArrowRight") next = (i + 1) % tabs.length;
+      else if (e.key === "ArrowLeft") next = (i - 1 + tabs.length) % tabs.length;
+      else if (e.key === "Home") next = 0;
+      else if (e.key === "End") next = tabs.length - 1;
+      if (next !== null) { e.preventDefault(); pick(next, true); }
+    });
+  });
+
+  /* Copy email. */
+  var btn = document.getElementById("copy");
+  var status = document.getElementById("status");
+  var addr = document.getElementById("addr");
+  btn.addEventListener("click", function () {
+    var text = addr.textContent.trim();
+    function fallback() {
+      var r = document.createRange();
+      r.selectNodeContents(addr);
+      var s = window.getSelection();
+      s.removeAllRanges();
+      s.addRange(r);
+      status.textContent = "Address selected. Copy it from your device menu.";
+    }
+    try {
+      navigator.clipboard.writeText(text).then(function () {
+        status.textContent = "Email address copied.";
+      }, fallback);
+    } catch (e) { fallback(); }
+  });
+})();
+</script>
+
+</body>
+</html>
